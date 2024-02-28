@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+    <title>signin</title>
+</head>
+
+
+<body>
+        <div class="wrapper">
+            <form action="">
+                <h1>ระบบแจ้งปัญหาคอมพิวเตอร์</h1>
+               
+                <div class="input-box">
+                    <input type="text" placeholder="ชื่อผู้ใช้" id=uname require>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="รหัสผ่าน" id= pass>
+                    <i class='bx bxs-lock'></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type ="checkbox">จดจำรหัสนี้ไว้</label>
+                </div>
+
+                <button type="submit" class="btn">เข้าสู่ระบบ</button>
+
+            </form>
+        </div>
+
+    
+    
+</body>
+</html>
