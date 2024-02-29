@@ -30,7 +30,7 @@
                 ?>
                     </div>
                 <?php } ?>
-            <form action="config/chk-login.php" method="post">
+            <form action="chk-login.php" method="post">
                 <h1>ระบบแจ้งปัญหาคอมพิวเตอร์</h1>
                
                 <div class="input-box">

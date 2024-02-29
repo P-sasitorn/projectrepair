@@ -1,7 +1,7 @@
 <?php
 // Connect to the database
     session_start();
-    require_once 'configdb.php';
+    require_once 'config/configdb.php';
 
     if (isset($_POST['chk_login'])) {
         $username = $_POST['username'];
