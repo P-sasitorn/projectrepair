@@ -3,7 +3,7 @@
     session_start();
     require_once 'configdb.php';
 
-    if (isset($_POST['login'])) {
+    if (isset($_POST['chk_login'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
 

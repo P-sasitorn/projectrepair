@@ -47,7 +47,7 @@
                     <label><input type ="checkbox">จดจำรหัสนี้ไว้</label>
                 </div>
 
-                <button type="submit" class="btn" name="login">เข้าสู่ระบบ</button>
+                <button type="submit" class="btn" name="chk_login">เข้าสู่ระบบ</button>
 
             </form>
         </div>
