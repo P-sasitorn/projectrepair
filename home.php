@@ -1,3 +1,16 @@
+<?php 
+    session_start();
+    require_once 'config/configdb.php';
+    if (!isset($_SESSION['user_login'])) {
+        $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ';
+        header("location: login.php");
+    } else {
+        $users_id = $_SESSION['user_login'];
+        $stmt = $conn->query("SELECT * FROM tb_users INNER JOIN tb_office ON tb_users.office_id = tb_office.office_id WHERE user_id = $users_id ");
+        $stmt->execute();
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +47,7 @@
        
     <section>
             <h1>Computer Repair</h1>
+            <h1><?php echo $row['office_branch']; ?></h1>
         </section>
 
 
